@@ -39,7 +39,7 @@ export function Navigation(){
                     <div >
                         <Link className={classes.logo} to='/'>
                                 <img className={classes.img} src={logo} alt="logo" /> 
-                            <span>Analitinform </span>
+                            <span className={classes.analit}>Analitinform </span>
                         </Link>
                     </div>
                     <ul onClick={()=>setActive(!active)} className={active? [classes.menu, classes.active].join(' '): [classes.menu]}>

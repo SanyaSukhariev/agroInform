@@ -87,10 +87,8 @@ body {
 
 }
 .contentInfo p{
-  font-family: 'Montserrat';
-    font-size: 21px;
-    line-height: 28px;
-   
+    font-family: 'Montserrat';
+    font-size: 20px;
     font-weight: 400;
     padding-bottom: 10px;
 }
@@ -109,6 +107,7 @@ body {
   font-family: 'Montserrat';
   gap: 20px;
   color: grey;
+  font-size: 16px;
   font-weight: 400;
 }
   
@@ -127,7 +126,7 @@ body {
     line-height: 43px;
     font-weight: 500;
     color: white;
-    /* color:cadetblue; */
+    
   }
 
   .itemBox{
@@ -219,7 +218,7 @@ body {
 /* Partners  */
 .partners{
   margin-top: 100px;
-
+  
 }
 .partners h2{
   font-family: 'Montserrat';
@@ -290,50 +289,56 @@ body {
 }
 
 /* contacts */
-.contacts{
-  margin-top: 100px;
-  
+.contacts {
+  margin-top:  200px;
 }
-.contacts h2{
+
+.contactsTitle {
   text-align: center;
-  font-family: 'Montserrat';
-  letter-spacing: -2px;
+  font-family: 'Montserrat', sans-serif;
   font-size: 38px;
-  line-height: 43px;
   font-weight: 500;
-  padding-bottom: 50px;
-  color:cadetblue;
+  color: cadetblue;
+  margin-bottom: 30px;
 }
-.contactsInfo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.contactsInfo {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.contactItems {
+  flex: 1;
+  padding: 30px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  text-align: center;
 }
 .contactItems{
-  margin: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactLabel {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  color: cadetblue;
+}
+
+.contactValue {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: dimgrey;
+  margin-top: 10px;
+
 }
 .maps{
-    margin-top: 100px;
-   
+  margin-top: 200px;
 }
-.contactsInfo p{
-    font-family: 'Montserrat';
-    font-weight: 400;
-    color:dimgrey;
-    font-size: 18px;
-}
-
-.footer{
-  display: flex;
-  background-color:black;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 50px;
-  color: white;
-
-}
-
 /* Стили для изображений в слайдах */
 
 /* Медиа-запрос для адаптации стилей на маленьких экранах */
@@ -426,6 +431,12 @@ body {
     justify-content: center;
     width: 270px;
     height: 270px;   
+  }
+  .contactValue {
+  
+    font-size: 16px;
+    
+  
   }
   .itemBox h2{
     font-size: 19px;
@@ -577,6 +588,7 @@ body {
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
+      
     }
       
     
@@ -610,7 +622,15 @@ body {
 }
 
 @media (max-width: 780px){
+  .contactValue {
 
+    font-size: 15px;
+
+  }
+  .contactLabel {
+    font-size: 18px;
+  
+  }
   
   .contentInfo h1{
     font-size: 25px;
@@ -623,6 +643,7 @@ body {
     width: 160px;
     height: 160px;
   }
+  
 }
 
 
@@ -638,6 +659,10 @@ body {
     height: 80vh;
     display: flex;
     overflow: hidden;
+  }
+  .contactsInfo{
+    display: flex;
+    flex-direction: column;
   }
   
   .box, .box1, .box2 {
@@ -823,17 +848,16 @@ body {
     width: 350px;
     height: 350px;
   }
+  .contactsInfo{
+    align-items: normal;
+  
+  }
  
   .box, .box1, .box2 {
     width: 210px;
     height: 210px;
   }
-  .contactsInfo{
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-   align-items: center;
-  }
+
   .contactsInfo p{
     font-size: 18px;
   }

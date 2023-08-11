@@ -174,8 +174,8 @@ export class Company extends Component {
             
 
             {/* contacts */}
-            <div className={classes.contacts}>
-              <h2>Контакти</h2>
+         
+              {/* <h2>Контакти</h2>
               <div className={classes.contactsInfo}>
                 <div className={classes.contactItems}>
                   <p>Tel/Fax</p>
@@ -192,8 +192,30 @@ export class Company extends Component {
                   <p>м. Харків, 61110 </p>
                   <p>ТОВ  “АНАЛІТІНФОРМ”</p>
                 </div>
+              </div> */}
+
+              <div className={classes.contacts}>
+                  <h2 className={classes.contactsTitle}>Контакти</h2>
+            <div className={classes.contactsInfo}>
+              <div className={classes.contactItems}>
+                <p className={classes.contactLabel}>Телефон/Fax</p>
+                <a className={classes.contactValue} href="tel:+38(057)7871019">+38(057)-787-10-19</a>
+                <p className={classes.contactValue}>Email: sales6apteka95gc.com</p>
+              </div>
+              <div className={classes.contactItems}>
+                <p className={classes.contactLabel}>Адреса</p>
+                <p className={classes.contactValue}>Харків, вул.Франківська, будинок 14,</p>
+                <p className={classes.contactValue}>ТОВ “АНАЛІТІНФОРМ”</p>
+              </div>
+              <div className={classes.contactItems}>
+                <p className={classes.contactLabel}>Поштова адреса</p>
+                <p className={classes.contactValue}>м. Харків, 61110</p>
+                <p className={classes.contactValue}>ТОВ “АНАЛІТІНФОРМ”</p>
               </div>
             </div>
+          </div>
+
+       
             <div className={classes.maps}>
               {/* <OfficeMap /> */}
               <iframe title="This is a unique title"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2156.7569491813965!2d36.25885561130025!3d49.99578330067665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0bfd3add01d%3A0x213ee869c995b234!2z0YPQuy4g0KTRgNCw0L3QutC-0LLRgdC60LDRjywgMTQsINCl0LDRgNGM0LrQvtCyLCDQpdCw0YDRjNC60L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2MTAwMA!5e0!3m2!1sru!2sua!4v1690877054919!5m2!1sru!2sua" width="100%" height="600" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
