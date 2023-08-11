@@ -1,0 +1,275 @@
+
+.partnersImageBg{
+    position: relative;
+}
+.partnersImageBg img{
+    display: block;
+    width: 100%;
+    height: 90vh;
+}
+.partnersImageBg::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.partnersImageBg h1 {
+    position: absolute;
+    top: 48%;
+    left: 20%;
+    color: white;
+    z-index: 2;
+    font-family:' Montserrat';
+    font-size: 58px;
+    font-weight: 400;
+  }
+.partners{
+    margin-top: 100px;
+  }
+  .partners h2{
+    font-family: 'Montserrat';
+    text-align: center;
+    letter-spacing: -2px;
+    font-size: 38px;
+      line-height: 43px;
+      font-weight: 600;
+    padding-bottom: 50px;
+    color:cadetblue;
+  }
+  
+  .ourPartners{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+    
+  .partnerBlock img{
+    max-width: 100px;
+    max-height: 70px;
+  }
+  .ourPartners .partnerBlock{
+    flex: 0 0 calc(30% - 10px); 
+    gap: 20px;
+   
+  }
+  
+
+  .partnerBlock {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+    
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  .partnerBlock p{
+    font-size: 18px;
+  }
+  
+  .partnerBlock:hover {
+    transform: translateY(-5px);
+    border: 1px solid darkcyan;
+  }
+  
+  .partnerInfo {
+    margin-left: 10px;
+  }
+  
+  .partnerLink {
+    display: none;
+    margin-top: 10px;
+    text-decoration: none;
+    color:darkcyan;
+  }
+  
+  .partnerBlock:hover .partnerLink {
+    display: block;
+  }
+  
+  .partnerInfo a{
+    text-align: center;
+  }
+  .footer{
+    margin-top: 200px;
+  }
+  
+@media(max-width:1400px){
+    .partnersImageBg img{
+        display: block;
+        width: 100%;
+        height: 80vh;
+    }
+    .partnerBlock p{
+        font-size: 15px;
+      }
+  }
+  @media(max-width:1180px){
+    .partnersImageBg img{
+        display: block;
+        width: 100%;
+        height: 70vh;
+    }
+    .partnerBlock p{
+        font-size: 14px;
+      }
+      .partnersImageBg h1{
+        font-size: 48px;
+      }
+  }
+
+
+@media(max-width:1000px) { 
+    .partnersImageBg img{
+        display: block;
+        width: 100%;
+        height: 65vh;
+    }
+    .partnersImageBg h1{
+        font-size: 63px;
+    }
+    .partners h2{
+        font-size: 41px;
+    }
+    .items a{
+        font-size: 15px;
+    }
+}
+@media(max-width:850px) {
+    .partnersImageBg img{
+        display: block;
+        width: 100%;
+        height: 60vh;
+    }
+    .partnersImageBg h1{
+        font-size: 63px;
+    }
+    .partners h2{
+        font-size: 41px;
+    }
+    .partnersImageBg h1{
+        font-size: 54px;
+    }
+    partners h2{
+        font-size: 38px;
+    }
+}
+
+@media(max-width:800px) {
+    .partnersImageBg img{
+        display: block;
+        width: 100%;
+        height: 50vh;
+    }
+    .partnersImageBg h1{
+        font-size: 48px;
+    }
+    .partners h2{
+        font-size: 35px;
+    }
+    .items p{
+        font-size:  15px;
+    }
+    .items a{
+        font-size: 15px;
+    }
+    .partnerBlock p{
+        font-size: 13px;
+      }
+      .partnersImageBg h1{
+        font-size: 45px;
+      }
+}
+@media(max-width:650px){
+    .partnersImageBg img{
+        display: block;
+        width: 100%;
+        height: 50vh;
+    }
+    .partnersImageBg h1{
+        font-size: 41px;
+    }
+    .partners h2{
+        font-size: 32px;
+    }
+    .items p{
+        font-size:  12px;
+    }
+    .items a{
+        font-size: 12px;
+    }
+    .partnerBlock p{
+        font-size: 12px;
+      }
+      .partnerBlock img{
+        max-width: 80px;
+        max-height: 70px;
+      }
+}
+@media(max-width:550px){
+    .partnersImageBg img{
+        display: block;
+        width: 100%;
+        height: 45vh;
+    }
+    .ourPartners{
+        display: block; 
+  
+    }
+    .partnersImageBg h1{
+        font-size: 35px;
+    }
+    .partners h2{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .ourPartners .items{
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+    .partnerBlock img{
+        max-width: 100px;
+        max-height: 70px;
+      }
+      .partnerInfo{
+        display: block;
+        max-width: 400px;
+      }
+      .partnerBlock p{
+        text-align:justify;
+        font-size: 14px;
+      }
+}
+
+@media(max-width:450px){
+    .partnersImageBg h1{
+        font-size: 35px;
+    }
+    .partnersImageBg img{
+        display: block;
+        width: 100%;
+        height: 38vh;
+    }
+    .partners h2{
+        font-size: 27px;
+    }
+}
+@media(max-width:400px){
+    .partnersImageBg h1{
+        font-size: 33px;
+    }
+    .partnersImageBg img{
+        display: block;
+        width: 100%;
+        height: 38vh;
+    }
+    .partners h2{
+        font-size: 23px;
+    }
+}
