@@ -50,7 +50,7 @@
   justify-content: space-around;
   flex-wrap: wrap;
   width: 40%;
-  gap:30px
+  gap:20px
 }
 
 .info h1{
@@ -62,8 +62,7 @@
 }
 .info p{
   font-family: 'Montserrat';
-    font-size: 23px;
-    line-height: 28px;
+    font-size: 20px;
     color: grey;
     font-weight: 400;
 }
