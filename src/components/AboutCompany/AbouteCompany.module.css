@@ -50,6 +50,7 @@
   justify-content: space-around;
   flex-wrap: wrap;
   width: 40%;
+  gap:30px
 }
 
 .info h1{
@@ -146,6 +147,9 @@
     height: 70vh;
     object-fit: cover;
   }
+  .info h1{
+    font-size: 27px;
+  }
   .info p{
     font-size: 15px;
   
@@ -168,13 +172,13 @@
     height: 60vh;
     object-fit: cover;
   }
+  .info h1{
+    font-size: 22px;
+  }
   .content h1 {
     font-size: 43px;
 }
-  .info h1{
-    font-size: 25px;
-    margin-bottom: 20px;
-  }
+  
 }
 @media(max-width:850px){
   .info p{
@@ -182,7 +186,7 @@
   
   }
   .info h1{
-    font-size: 23px;
+    font-size: 20px;
   }
 }
 @media (max-width: 800px) {
@@ -195,6 +199,7 @@
   .info h1{
     text-align: center;
     font-size: 32px;
+    margin-bottom: 50px;
   }
   .info p{
     display: block;
@@ -252,6 +257,9 @@
   .image{
     max-width: 400px;
   }
+  .info h1{
+    font-size: 25px;
+  }
 }
 
 
@@ -267,6 +275,12 @@
 }
   .info h2{
     font-size: 1.7rem;
+  }
+  .info h1{
+    font-size: 22px;
+  }
+  .foot h4{
+    font-size: 12px;
   }
   .image{
     max-width: 300px;

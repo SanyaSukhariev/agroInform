@@ -10,25 +10,25 @@ export function Navigation(){
 
     const [active, setActive]=useState(false)
     
-    const [navbarBackground, setNavbarBackground] = useState('rgba(0, 128, 128, 1)');
+    const [navbarBackground, setNavbarBackground] = useState('rgba(0, 128, 128, 0.2)');
 
-  //   const handleScroll = () => {
-  //     const scrolled = window.scrollY;
+    const handleScroll = () => {
+      const scrolled = window.scrollY;
   
-  //     if (scrolled > 100) {
-  //       setNavbarBackground('rgba(0, 128, 128, 1)');
-  //     } else {
-  //       setNavbarBackground('rgba(0, 128, 128, 0.2)');
-  //     }
-  //   };
+      if (scrolled > 100) {
+        setNavbarBackground('rgba(0, 128, 128, 1)');
+      } else {
+        setNavbarBackground('rgba(0, 128, 128, 0.2)');
+      }
+    };
   
-  //  useEffect(() => {
-  //     window.addEventListener('scroll', handleScroll);
-  //     return () => {
-  //       window.removeEventListener('scroll', handleScroll);
-  //     };
-  //   }, []);
-    // rgba(0, 128, 128, 0.2)
+   useEffect(() => {
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
+    
 
     return(
         <header className={classes.header}>
